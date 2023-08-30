@@ -8,6 +8,7 @@ import { useSelector } from 'react-redux';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import { themeSettings } from 'theme';
+import NavBar from 'containers/navbar';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <BrowserRouter>
         <ThemeProvider theme= {theme}>
           <CssBaseline />
+          {/* <NavBar /> */}
           <Routes>
             <Route path="/" element={<LoginPage />} />
             <Route path="/home" element={<HomePage />} />
